@@ -1,0 +1,22 @@
+{
+    "Project Title": "Cloud-Native Physics-Informed Hybrid Quantum Predictive Maintenance System",
+    "Dataset Baseline": "NASA CMAPSS (FD001)",
+    "Engineered Features": [
+        "sensor_11_grad",
+        "sensor_11_roll_std",
+        "sensor_12_grad",
+        "sensor_12_roll_std"
+    ],
+    "Classical Baselines": {
+        "Random Forest F1-Score": "79.42%",
+        "XGBoost F1-Score": "80.10%",
+        "XGBoost Execution Time": "0.5619 seconds"
+    },
+    "Quantum Framework": {
+        "Simulator Backend": "PennyLane lightning.qubit / AWS SV1 Integration",
+        "Qubits Used": 4,
+        "Trainable Variations": 24,
+        "Local Subsample Optimization": "Verified (Loss drop: 0.5496 -> 0.3436)"
+    },
+    "AWS Architecture Infrastructure": "S3 Data Buckets -> AWS Lambda Triggers -> Amazon Braket Hybrid Jobs"
+}
