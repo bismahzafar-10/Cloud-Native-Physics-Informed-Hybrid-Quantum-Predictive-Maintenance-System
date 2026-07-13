@@ -266,9 +266,3 @@ Phase 6 → Dashboard & Reporting
 1. Saxena, A., & Goebel, K. (2008). *Turbofan Engine Degradation Simulation Data Set*. NASA Ames Prognostics Data Repository.
 2. Amazon Braket Developer Guide.
 3. Bergholm, V. et al. (2018). *PennyLane: Automatic differentiation of quantum circuits*. arXiv:1811.04968.
-
----
-
-# 🎤 Interview Elevator Pitch
-
-> Developed a cloud-native hybrid quantum-classical predictive maintenance framework that combines physics-informed feature engineering, classical machine learning baselines, and variational quantum circuits executed through Amazon Braket. The project investigates whether quantum representation learning can improve industrial failure prediction while maintaining an enterprise-ready AWS architecture.
