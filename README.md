@@ -1,16 +1,40 @@
 # Cloud-Native Physics-Informed Hybrid Quantum Predictive Maintenance System
+
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![AWS](https://img.shields.io/badge/AWS-Amazon_Braket-orange)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.x-red)
 ![PennyLane](https://img.shields.io/badge/PennyLane-QML-green)
 
-### Amazon Braket | PennyLane | PyTorch | AWS Infrastructure | Quantum Machine Learning
+### ⚛️ Amazon Braket • ☁️ AWS • 🧠 PennyLane • 🔥 PyTorch
 
-> A cloud-native hybrid quantum-classical machine learning framework for predictive maintenance of industrial assets. The system combines **physics-informed feature engineering**, **classical machine learning baselines**, and **variational quantum circuits (VQCs)** executed on **Amazon Braket** to investigate quantum-enhanced representation learning for industrial AI applications.
+### Hybrid Quantum-Classical Machine Learning for Industrial Predictive Maintenance
+
+> 🚀 Exploring whether quantum representation learning can enhance industrial predictive maintenance pipelines while remaining compatible with enterprise-scale AWS infrastructure.
 
 ---
 
-## 🎯 Motivation
+## 📑 Table of Contents
+
+* [Motivation](#-motivation)
+* [Key Features](#-key-features)
+* [Tech Stack](#️-tech-stack)
+* [Industrial Applications](#-industrial-applications)
+* [System Architecture](#️-system-architecture)
+* [Workflow](#️-workflow)
+* [Physics-Informed Feature Engineering](#-physics-informed-feature-engineering)
+* [Quantum Machine Learning Pipeline](#️-quantum-machine-learning-pipeline)
+* [Benchmark Results](#-benchmark-results)
+* [AWS Braket Cost Analysis](#-aws-braket-cost-analysis)
+* [Repository Structure](#-repository-structure)
+* [Getting Started](#-getting-started)
+* [Project Status](#-project-status)
+* [Future Work](#-future-work)
+* [References](#-references)
+* [Citation](#-citation)
+
+---
+
+# 🎯 Motivation
 
 Unexpected equipment failures in industrial systems such as turbines, pumps, compressors, and manufacturing machinery lead to substantial operational and financial losses. Predictive maintenance aims to anticipate these failures before they occur, reducing downtime and optimizing maintenance schedules.
 
@@ -22,7 +46,32 @@ This project explores whether **hybrid quantum machine learning models** can com
 
 ---
 
-## 🏭 Industrial Applications
+# ✨ Key Features
+
+* Physics-informed feature engineering from industrial sensor data.
+* Hybrid quantum-classical machine learning framework.
+* Variational Quantum Circuits implemented using PennyLane.
+* Amazon Braket integration and cloud-native workflow.
+* Benchmarking against state-of-the-art classical ML models.
+* Modular, reproducible, and extensible codebase.
+
+---
+
+# 🛠️ Tech Stack
+
+| Category          | Technologies                   |
+| ----------------- | ------------------------------ |
+| Language          | Python 3.11                    |
+| Machine Learning  | PyTorch, Scikit-learn, XGBoost |
+| Quantum Computing | PennyLane, Amazon Braket       |
+| Cloud             | AWS S3, Lambda, CloudWatch     |
+| Data Processing   | NumPy, Pandas                  |
+| Visualization     | Matplotlib, Seaborn            |
+| Version Control   | Git, GitHub                    |
+
+---
+
+# 🏭 Industrial Applications
 
 * Predictive maintenance for manufacturing equipment
 * Industrial IoT asset monitoring
@@ -129,8 +178,6 @@ These features introduce domain knowledge into the learning process and improve 
 
 # 🤖 Classical Machine Learning Baselines
 
-To establish performance boundaries, the following models are benchmarked:
-
 * Random Forest
 * XGBoost
 * Multi-Layer Perceptron (MLP)
@@ -188,6 +235,23 @@ The architecture combines:
 
 ---
 
+# 📂 Dataset
+
+**Dataset:** NASA CMAPSS Turbofan Engine Degradation Dataset
+
+The dataset contains:
+
+* Multiple operating conditions
+* 21 sensor measurements
+* Engine cycle information
+* Failure labels
+
+Source:
+
+https://ti.arc.nasa.gov/tech/dash/groups/pcoe/prognostic-data-repository/
+
+---
+
 # 📊 Benchmark Results
 
 ## Classical Baselines
@@ -202,6 +266,8 @@ The architecture combines:
 | Model                   | Accuracy | Status       |
 | ----------------------- | -------- | ------------ |
 | 4-Qubit Variational QNN | 85.25%   | Experimental |
+
+> **Note:** Quantum results correspond to an experimental proof-of-concept implementation on a reduced feature subset and are intended to evaluate feasibility rather than outperform optimized classical baselines.
 
 ---
 
@@ -254,6 +320,48 @@ Phase 6 → Dashboard & Reporting
 
 ---
 
+# 🚀 Getting Started
+
+### Clone Repository
+
+```bash
+git clone https://github.com/bismahzafar-10/Cloud-Native-Physics-Informed-Hybrid-Quantum-Predictive-Maintenance-System.git
+cd Cloud-Native-Physics-Informed-Hybrid-Quantum-Predictive-Maintenance-System
+```
+
+### Create Environment
+
+```bash
+python -m venv venv
+source venv/bin/activate
+```
+
+### Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Train Models
+
+```bash
+python src/train.py
+```
+
+---
+
+# 🚧 Project Status
+
+* [x] Dataset preprocessing
+* [x] Physics-informed feature engineering
+* [x] Classical baselines
+* [x] Quantum proof of concept
+* [ ] Amazon Braket Hybrid Jobs execution
+* [ ] Physical QPU experiments
+* [ ] Dashboard deployment
+
+---
+
 # 🔮 Future Work
 
 * Execute experiments on physical quantum hardware via Amazon Braket.
@@ -270,3 +378,16 @@ Phase 6 → Dashboard & Reporting
 1. Saxena, A., & Goebel, K. (2008). *Turbofan Engine Degradation Simulation Data Set*. NASA Ames Prognostics Data Repository.
 2. Amazon Braket Developer Guide.
 3. Bergholm, V. et al. (2018). *PennyLane: Automatic differentiation of quantum circuits*. arXiv:1811.04968.
+
+---
+
+# 📖 Citation
+
+```bibtex
+@misc{zafar2026piqpm,
+  title={Cloud-Native Physics-Informed Hybrid Quantum Predictive Maintenance System},
+  author={Bismah Zafar},
+  year={2026},
+  url={https://github.com/bismahzafar-10/Cloud-Native-Physics-Informed-Hybrid-Quantum-Predictive-Maintenance-System}
+}
+```
