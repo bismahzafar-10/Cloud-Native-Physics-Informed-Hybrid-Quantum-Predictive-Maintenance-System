@@ -83,6 +83,7 @@ This project explores whether **hybrid quantum machine learning models** can com
 ---
 
 # 🏗️ System Architecture
+![System Architecture](figures/system_architecture.png)
 
 ```mermaid
 graph LR
@@ -97,7 +98,7 @@ graph LR
 ---
 
 # ☁️ AWS Cloud Architecture
-
+![AWS Architecture](figures/aws_pipeline.png)
 ```mermaid
 graph TD
     subgraph Local Feature Engineering
@@ -127,7 +128,7 @@ graph TD
 ---
 
 # ⚙️ Workflow
-
+![Workflow](figures/workflow.png)
 ```text
 NASA CMAPSS Dataset
         ↓
@@ -172,6 +173,8 @@ Instead of relying solely on raw sensor measurements, the pipeline extracts phys
 * Energy dissipation rates
 * Sensor trend indicators
 
+## Feature Importance
+![Feature Importance](figures/feature_importance.png)
 These features introduce domain knowledge into the learning process and improve robustness against noisy sensor data.
 
 ---
@@ -185,7 +188,7 @@ These features introduce domain knowledge into the learning process and improve 
 ---
 
 # ⚛️ Quantum Machine Learning Pipeline
-
+![Quantum Circuit](figures/quantum_circuit.png)
 The quantum layer is implemented using:
 
 * PennyLane
@@ -279,6 +282,27 @@ https://ti.arc.nasa.gov/tech/dash/groups/pcoe/prognostic-data-repository/
 | Amazon Braket SV1 | ~15 sec  | $0.075/min         | ~$0.24/run     |
 | Physical QPU      | Variable | Hardware dependent | Variable       |
 
+---
+# 📊 Benchmark Results
+
+## Classical Baselines
+
+| Model | Accuracy | F1-Score | Inference Time |
+|-------|-----------|-----------|----------------|
+| Random Forest | 94.16% | 79.42% | 5.61 sec |
+| XGBoost | **94.40%** | **80.10%** | **0.56 sec** |
+
+## Quantum Prototype (PoC)
+
+| Model | Accuracy | Status |
+|-------|-----------|---------|
+| 4-Qubit Variational QNN | 85.25% | Experimental |
+
+## Model Comparison
+
+![Model Comparison](figures/model_comparison.png)
+
+> **Note:** Quantum results correspond to an experimental proof-of-concept implementation on a reduced feature subset and are intended to evaluate feasibility rather than outperform optimized classical baselines.
 ---
 
 # 📁 Repository Structure
