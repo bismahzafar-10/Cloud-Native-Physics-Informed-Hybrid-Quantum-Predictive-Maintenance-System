@@ -379,15 +379,3 @@ python src/train.py
 2. Amazon Braket Developer Guide.
 3. Bergholm, V. et al. (2018). *PennyLane: Automatic differentiation of quantum circuits*. arXiv:1811.04968.
 
----
-
-# 📖 Citation
-
-```bibtex
-@misc{zafar2026piqpm,
-  title={Cloud-Native Physics-Informed Hybrid Quantum Predictive Maintenance System},
-  author={Bismah Zafar},
-  year={2026},
-  url={https://github.com/bismahzafar-10/Cloud-Native-Physics-Informed-Hybrid-Quantum-Predictive-Maintenance-System}
-}
-```
