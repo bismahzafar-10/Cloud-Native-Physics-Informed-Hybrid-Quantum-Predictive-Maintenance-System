@@ -1,5 +1,9 @@
 # Cloud-Native Physics-Informed Hybrid Quantum Predictive Maintenance System
-
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![AWS](https://img.shields.io/badge/AWS-Amazon_Braket-orange)
+![PyTorch](https://img.shields.io/badge/PyTorch-2.x-red)
+![PennyLane](https://img.shields.io/badge/PennyLane-QML-green)
+![License](https://img.shields.io/badge/License-MIT-purple)
 ### Amazon Braket | PennyLane | PyTorch | AWS Infrastructure | Quantum Machine Learning
 
 > A cloud-native hybrid quantum-classical machine learning framework for predictive maintenance of industrial assets. The system combines **physics-informed feature engineering**, **classical machine learning baselines**, and **variational quantum circuits (VQCs)** executed on **Amazon Braket** to investigate quantum-enhanced representation learning for industrial AI applications.
